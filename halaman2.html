@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scroll Horizontal seperti di Shopee</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="serch.png">
+</head>
+<style>
+ body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+.scroll-container {
+  width: 80%; /* Lebar kontainer */
+  overflow-x: auto; /* Aktifkan scroll horizontal */
+  white-space: nowrap; /* Hapus pembungkus teks */
+}
+
+.scroll-wrapper {
+  display: inline-block; /* Mengatasi margin ekstra */
+}
+
+.scroll-content {
+  display: inline-flex; /* Mengatur konten agar ditampilkan secara inline */
+}
+
+.scroll-content img {
+  width: 150px; /* Lebar gambar produk */
+  height: auto; /* Biarkan tinggi disesuaikan sesuai aspek rasio gambar */
+  margin-right: 10px; /* Jarak antar gambar */
+}
+
+</style>
+
+<body>
+  <div class="scroll-container">
+    <div class="scroll-wrapper">
+      <div class="scroll-content">
+        <img src="rog.png" alt="Produk 1">
+        <img src="acer.png" alt="Produk 2">
+        <img src="rog.png" alt="Produk 3">
+        <img src="asus.png" alt="Produk 4">
+        <img src="rog.png" alt="Produk 5">
+        <img src="acer.png" alt="Produk 6">
+        <img src="acer.png" alt="Produk 7">
+        <img src="asus.png" alt="Produk 8">
+        <img src="rog.png" alt="Produk 9">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
